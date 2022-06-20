@@ -6,13 +6,14 @@ public class EnemyRecieveDamage : MonoBehaviour
 {
     public float health;
     public float MaxHealth;
+    
 
     void Start()
     {
         health = MaxHealth;
     }
 
-    public void DealDamage(float damage)
+    public void DealDamage(int damage)
     {
         health -= damage;
         CheckDeath();
